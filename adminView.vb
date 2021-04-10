@@ -9,16 +9,6 @@ Public Class adminView
         ' This call is required by the designer.
         InitializeComponent()
         ' Add any initialization after the InitializeComponent() call.
-
-        viewBookPanel.Controls.Add(viewBookuserCtl)
-        addBookPanel.Controls.Add(addBookuserCtl)
-        recordsPanel.Controls.Add(recorduserCtl)
-        collectionsPanel.Controls.Add(collectionsuserCtl)
-
-        viewBookPanel.Visible = True
-        addBookPanel.Visible = False
-        recordsPanel.Visible = False
-        collectionsPanel.Visible = False
     End Sub
 
     Private Sub adminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -45,31 +35,27 @@ Public Class adminView
         '2. Switching of controls in the RIGHT panel
         Select Case btn.Name
             Case viewBookBtn.Name
-                viewBookPanel.Visible = True
-                addBookPanel.Visible = False
-                recordsPanel.Visible = False
-                collectionsPanel.Visible = False
+                switchPanel(viewBookuserCtl)
             Case bokkAddBtn.Name
-                viewBookPanel.Visible = False
-                addBookPanel.Visible = True
-                recordsPanel.Visible = False
-                collectionsPanel.Visible = False
+                switchPanel(addBookuserCtl)
             Case recordsBtn.Name
-                viewBookPanel.Visible = False
-                addBookPanel.Visible = False
-                recordsPanel.Visible = True
-                collectionsPanel.Visible = False
+                'User_Acount.WindowState = System.Windows.Forms.FormWindowState.Maximized
+                switchPanel(recorduserCtl)
             Case collectionsBtn.Name
-                viewBookPanel.Visible = False
-                addBookPanel.Visible = False
-                recordsPanel.Visible = False
-                collectionsPanel.Visible = True
+                switchPanel(collectionsuserCtl)
             Case signOutBtn.Name
                 'Smooth Exit
                 Me.Hide()
                 Main.Show()
                 Me.Close()
         End Select
+    End Sub
+
+    'Helper sub for switching view controls in the RIGHT panel view
+    Sub switchPanel(ByVal userControlPanel As UserControl)
+        backgroundPanel.Controls.Clear()
+        backgroundPanel.Controls.Add(userControlPanel)
+        userControlPanel.Show()
     End Sub
 
 
