@@ -19,6 +19,7 @@ Public Class Main
     Private viewBook As New viewBook
 
     Public Sub New()
+        ' wassup mananap was here
         InitializeComponent()
         searchTextBox.SelectionStart = 0
         FlowLayoutPanel1.Controls.Clear()
