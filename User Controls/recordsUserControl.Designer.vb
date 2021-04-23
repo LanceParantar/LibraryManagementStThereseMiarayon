@@ -22,12 +22,12 @@ Partial Class recordsUserControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl = New System.Windows.Forms.TabControl()
         Me.borrowListTabPage = New System.Windows.Forms.TabPage()
         Me.PanelDataGridViewBorrowList = New System.Windows.Forms.Panel()
@@ -42,6 +42,7 @@ Partial Class recordsUserControl
         Me.B_BowID_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CheckIn_Column = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabelBorrowedBooks = New System.Windows.Forms.LinkLabel()
         Me.TextBoxBookDetailBorrowList = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -70,6 +71,7 @@ Partial Class recordsUserControl
         Me.Ret_BowID_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Ret_UpdatePStatus_Column = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.LinkLabelReturnedBooks = New System.Windows.Forms.LinkLabel()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -99,6 +101,7 @@ Partial Class recordsUserControl
         Me.Res_ReservationID_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Complete_Column = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.LinkLabelReservedBooks = New System.Windows.Forms.LinkLabel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBoxBookDetailReserveList = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -111,9 +114,12 @@ Partial Class recordsUserControl
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.searchReservationBtn = New System.Windows.Forms.Button()
         Me.searchReservationTxtBx = New System.Windows.Forms.TextBox()
-        Me.LinkLabelReturnedBooks = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabelBorrowedBooks = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabelReservedBooks = New System.Windows.Forms.LinkLabel()
+        Me.PictureBoxX1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxX2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxX3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxX4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxX5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxX6 = New System.Windows.Forms.PictureBox()
         Me.TabControl.SuspendLayout()
         Me.borrowListTabPage.SuspendLayout()
         Me.PanelDataGridViewBorrowList.SuspendLayout()
@@ -127,6 +133,12 @@ Partial Class recordsUserControl
         Me.PanelDataGridViewReserveList.SuspendLayout()
         CType(Me.reservationListDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBoxX1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxX2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxX3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxX4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxX5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxX6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl
@@ -175,14 +187,14 @@ Partial Class recordsUserControl
         Me.borrowListDataGrid.AllowUserToResizeColumns = False
         Me.borrowListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.borrowListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.borrowListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.borrowListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.borrowListDataGrid.ColumnHeadersHeight = 29
         Me.borrowListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.borrowListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.B_Cover_Column, Me.B_BorrowDate_Column, Me.B_DueDate_Column, Me.B_ISBN_Column, Me.B_Title_Column, Me.B_Edition_Column, Me.B_ShelfID_Column, Me.B_BowID_Column, Me.CheckIn_Column})
@@ -195,12 +207,12 @@ Partial Class recordsUserControl
         Me.borrowListDataGrid.RowHeadersVisible = False
         Me.borrowListDataGrid.RowHeadersWidth = 51
         Me.borrowListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
-        Me.borrowListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        Me.borrowListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.borrowListDataGrid.RowTemplate.Height = 30
         Me.borrowListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.borrowListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -292,6 +304,8 @@ Partial Class recordsUserControl
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.PictureBoxX2)
+        Me.Panel1.Controls.Add(Me.PictureBoxX1)
         Me.Panel1.Controls.Add(Me.LinkLabelBorrowedBooks)
         Me.Panel1.Controls.Add(Me.TextBoxBookDetailBorrowList)
         Me.Panel1.Controls.Add(Me.Label9)
@@ -311,6 +325,17 @@ Partial Class recordsUserControl
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1736, 114)
         Me.Panel1.TabIndex = 0
+        '
+        'LinkLabelBorrowedBooks
+        '
+        Me.LinkLabelBorrowedBooks.AutoSize = True
+        Me.LinkLabelBorrowedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabelBorrowedBooks.Location = New System.Drawing.Point(1529, 11)
+        Me.LinkLabelBorrowedBooks.Name = "LinkLabelBorrowedBooks"
+        Me.LinkLabelBorrowedBooks.Size = New System.Drawing.Size(193, 17)
+        Me.LinkLabelBorrowedBooks.TabIndex = 46
+        Me.LinkLabelBorrowedBooks.TabStop = True
+        Me.LinkLabelBorrowedBooks.Text = "View All Borrowed Books"
         '
         'TextBoxBookDetailBorrowList
         '
@@ -464,14 +489,14 @@ Partial Class recordsUserControl
         Me.returnListDataGrid.AllowUserToResizeRows = False
         Me.returnListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.returnListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.returnListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.returnListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.returnListDataGrid.ColumnHeadersHeight = 29
         Me.returnListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.returnListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Ret_Cover_Column, Me.Ret_PaymentStatus_Column, Me.Ret_BorrowDate_Column, Me.Ret_DueDate_Column, Me.Ret_DateReturned_Column, Me.Ret_Penalty_Column, Me.Ret_ISBN_Column, Me.Ret_Title_Column, Me.Ret_Edition_Column, Me.Ret_ShelfID_Column, Me.Ret_BowID_Column, Me.Ret_UpdatePStatus_Column})
@@ -483,12 +508,12 @@ Partial Class recordsUserControl
         Me.returnListDataGrid.RowHeadersVisible = False
         Me.returnListDataGrid.RowHeadersWidth = 51
         Me.returnListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White
-        Me.returnListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        Me.returnListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.returnListDataGrid.RowTemplate.Height = 30
         Me.returnListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.returnListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -611,6 +636,8 @@ Partial Class recordsUserControl
         '
         'Panel5
         '
+        Me.Panel5.Controls.Add(Me.PictureBoxX4)
+        Me.Panel5.Controls.Add(Me.PictureBoxX3)
         Me.Panel5.Controls.Add(Me.LinkLabelReturnedBooks)
         Me.Panel5.Controls.Add(Me.Label15)
         Me.Panel5.Controls.Add(Me.CheckBox2)
@@ -633,6 +660,17 @@ Partial Class recordsUserControl
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1736, 114)
         Me.Panel5.TabIndex = 2
+        '
+        'LinkLabelReturnedBooks
+        '
+        Me.LinkLabelReturnedBooks.AutoSize = True
+        Me.LinkLabelReturnedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabelReturnedBooks.Location = New System.Drawing.Point(1533, 11)
+        Me.LinkLabelReturnedBooks.Name = "LinkLabelReturnedBooks"
+        Me.LinkLabelReturnedBooks.Size = New System.Drawing.Size(190, 17)
+        Me.LinkLabelReturnedBooks.TabIndex = 45
+        Me.LinkLabelReturnedBooks.TabStop = True
+        Me.LinkLabelReturnedBooks.Text = "View All Returned Books"
         '
         'Label15
         '
@@ -821,14 +859,14 @@ Partial Class recordsUserControl
         Me.reservationListDataGrid.AllowUserToResizeRows = False
         Me.reservationListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.reservationListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.reservationListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.reservationListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.reservationListDataGrid.ColumnHeadersHeight = 29
         Me.reservationListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.reservationListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Res_Cover_Column, Me.Res_Status_Column, Me.Res_ReserveDate_Column, Me.Res_ISBN_Column, Me.Res_Title_Column, Me.Res_Edition_Column, Me.Res_ShelfID_Column, Me.Res_BowID_Column, Me.Res_ReservationID_Column, Me.Complete_Column})
@@ -841,12 +879,12 @@ Partial Class recordsUserControl
         Me.reservationListDataGrid.RowHeadersVisible = False
         Me.reservationListDataGrid.RowHeadersWidth = 51
         Me.reservationListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White
-        Me.reservationListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.reservationListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.reservationListDataGrid.RowTemplate.Height = 30
         Me.reservationListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.reservationListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -948,6 +986,8 @@ Partial Class recordsUserControl
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.PictureBoxX6)
+        Me.Panel3.Controls.Add(Me.PictureBoxX5)
         Me.Panel3.Controls.Add(Me.LinkLabelReservedBooks)
         Me.Panel3.Controls.Add(Me.Label10)
         Me.Panel3.Controls.Add(Me.TextBoxBookDetailReserveList)
@@ -967,6 +1007,17 @@ Partial Class recordsUserControl
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1736, 114)
         Me.Panel3.TabIndex = 1
+        '
+        'LinkLabelReservedBooks
+        '
+        Me.LinkLabelReservedBooks.AutoSize = True
+        Me.LinkLabelReservedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabelReservedBooks.Location = New System.Drawing.Point(1534, 11)
+        Me.LinkLabelReservedBooks.Name = "LinkLabelReservedBooks"
+        Me.LinkLabelReservedBooks.Size = New System.Drawing.Size(188, 17)
+        Me.LinkLabelReservedBooks.TabIndex = 46
+        Me.LinkLabelReservedBooks.TabStop = True
+        Me.LinkLabelReservedBooks.Text = "View All Reserved Books"
         '
         'Label10
         '
@@ -1090,38 +1141,65 @@ Partial Class recordsUserControl
         Me.searchReservationTxtBx.TabIndex = 17
         Me.searchReservationTxtBx.Text = "Search ID number..."
         '
-        'LinkLabelReturnedBooks
+        'PictureBoxX1
         '
-        Me.LinkLabelReturnedBooks.AutoSize = True
-        Me.LinkLabelReturnedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabelReturnedBooks.Location = New System.Drawing.Point(1533, 11)
-        Me.LinkLabelReturnedBooks.Name = "LinkLabelReturnedBooks"
-        Me.LinkLabelReturnedBooks.Size = New System.Drawing.Size(190, 17)
-        Me.LinkLabelReturnedBooks.TabIndex = 45
-        Me.LinkLabelReturnedBooks.TabStop = True
-        Me.LinkLabelReturnedBooks.Text = "View All Returned Books"
+        Me.PictureBoxX1.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX1.Location = New System.Drawing.Point(1186, 75)
+        Me.PictureBoxX1.Name = "PictureBoxX1"
+        Me.PictureBoxX1.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX1.TabIndex = 47
+        Me.PictureBoxX1.TabStop = False
         '
-        'LinkLabelBorrowedBooks
+        'PictureBoxX2
         '
-        Me.LinkLabelBorrowedBooks.AutoSize = True
-        Me.LinkLabelBorrowedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabelBorrowedBooks.Location = New System.Drawing.Point(1529, 11)
-        Me.LinkLabelBorrowedBooks.Name = "LinkLabelBorrowedBooks"
-        Me.LinkLabelBorrowedBooks.Size = New System.Drawing.Size(193, 17)
-        Me.LinkLabelBorrowedBooks.TabIndex = 46
-        Me.LinkLabelBorrowedBooks.TabStop = True
-        Me.LinkLabelBorrowedBooks.Text = "View All Borrowed Books"
+        Me.PictureBoxX2.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX2.Location = New System.Drawing.Point(1497, 75)
+        Me.PictureBoxX2.Name = "PictureBoxX2"
+        Me.PictureBoxX2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX2.TabIndex = 48
+        Me.PictureBoxX2.TabStop = False
         '
-        'LinkLabelReservedBooks
+        'PictureBoxX3
         '
-        Me.LinkLabelReservedBooks.AutoSize = True
-        Me.LinkLabelReservedBooks.Font = New System.Drawing.Font("Century Schoolbook", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabelReservedBooks.Location = New System.Drawing.Point(1534, 11)
-        Me.LinkLabelReservedBooks.Name = "LinkLabelReservedBooks"
-        Me.LinkLabelReservedBooks.Size = New System.Drawing.Size(188, 17)
-        Me.LinkLabelReservedBooks.TabIndex = 46
-        Me.LinkLabelReservedBooks.TabStop = True
-        Me.LinkLabelReservedBooks.Text = "View All Reserved Books"
+        Me.PictureBoxX3.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX3.Location = New System.Drawing.Point(1239, 75)
+        Me.PictureBoxX3.Name = "PictureBoxX3"
+        Me.PictureBoxX3.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX3.TabIndex = 48
+        Me.PictureBoxX3.TabStop = False
+        '
+        'PictureBoxX4
+        '
+        Me.PictureBoxX4.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX4.Location = New System.Drawing.Point(1536, 75)
+        Me.PictureBoxX4.Name = "PictureBoxX4"
+        Me.PictureBoxX4.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX4.TabIndex = 49
+        Me.PictureBoxX4.TabStop = False
+        '
+        'PictureBoxX5
+        '
+        Me.PictureBoxX5.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX5.Location = New System.Drawing.Point(1182, 75)
+        Me.PictureBoxX5.Name = "PictureBoxX5"
+        Me.PictureBoxX5.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX5.TabIndex = 48
+        Me.PictureBoxX5.TabStop = False
+        '
+        'PictureBoxX6
+        '
+        Me.PictureBoxX6.BackgroundImage = Global.LibraryManagementSystem.My.Resources.Resources.x
+        Me.PictureBoxX6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBoxX6.Location = New System.Drawing.Point(1497, 75)
+        Me.PictureBoxX6.Name = "PictureBoxX6"
+        Me.PictureBoxX6.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBoxX6.TabIndex = 49
+        Me.PictureBoxX6.TabStop = False
         '
         'recordsUserControl
         '
@@ -1147,6 +1225,12 @@ Partial Class recordsUserControl
         CType(Me.reservationListDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBoxX1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxX2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxX3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxX4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxX5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxX6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1237,4 +1321,10 @@ Partial Class recordsUserControl
     Friend WithEvents LinkLabelReturnedBooks As LinkLabel
     Friend WithEvents LinkLabelBorrowedBooks As LinkLabel
     Friend WithEvents LinkLabelReservedBooks As LinkLabel
+    Friend WithEvents PictureBoxX1 As PictureBox
+    Friend WithEvents PictureBoxX2 As PictureBox
+    Friend WithEvents PictureBoxX4 As PictureBox
+    Friend WithEvents PictureBoxX3 As PictureBox
+    Friend WithEvents PictureBoxX6 As PictureBox
+    Friend WithEvents PictureBoxX5 As PictureBox
 End Class
