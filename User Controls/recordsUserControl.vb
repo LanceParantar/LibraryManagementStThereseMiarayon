@@ -93,7 +93,7 @@
         Dim listDTO As List(Of BorrowDTO)
         Select Case sender.name
             Case searchBorrowBtn.Name
-                searchKey = searchBorrowTxtBx.Text.Trim()
+                searchKey = searchBorrowTxtBx1.Text.Trim()
                 listDTO = If(searchKey.Equals(""), borrows, borrows.FindAll(Function(ret) ret.userDTO.id.Equals(searchKey)))
                 setDataGrid(listDTO, borrowListDataGrid, True)
             Case searchReturnBtn.Name
@@ -126,8 +126,7 @@
     End Sub
 
     Private Sub recordsUserControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Me.Width = Screen.PrimaryScreen.WorkingArea.Width
-        ' Me.Height = Screen.PrimaryScreen.WorkingArea.Height
+        ComboBoxBookDetailFilter.SelectedIndex = 0
     End Sub
 
     Private Sub returnListDataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles returnListDataGrid.CellContentClick
