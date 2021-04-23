@@ -22,12 +22,12 @@ Partial Class recordsUserControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl = New System.Windows.Forms.TabControl()
         Me.borrowListTabPage = New System.Windows.Forms.TabPage()
         Me.PanelDataGridViewBorrowList = New System.Windows.Forms.Panel()
@@ -42,10 +42,14 @@ Partial Class recordsUserControl
         Me.B_BowID_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CheckIn_Column = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBoxBookDetailBorrowList = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBoxBookDetailFilterBorrowList = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePickerBorrowListTo = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePickerBorrowListFrom = New System.Windows.Forms.DateTimePicker()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.searchBorrowBtn = New System.Windows.Forms.Button()
@@ -83,13 +87,7 @@ Partial Class recordsUserControl
         Me.Res_ReservationID_Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Complete_Column = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.searchReservationBtn = New System.Windows.Forms.Button()
-        Me.searchReservationTxtBx = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePickerBorrowListTo = New System.Windows.Forms.DateTimePicker()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBoxBookDetailBorrowList = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBoxBookDetailReserveList = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -98,7 +96,9 @@ Partial Class recordsUserControl
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DateTimePickerReserveListTo = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePickerReserveListFrom = New System.Windows.Forms.DateTimePicker()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.searchReservationBtn = New System.Windows.Forms.Button()
+        Me.searchReservationTxtBx = New System.Windows.Forms.TextBox()
         Me.TabControl.SuspendLayout()
         Me.borrowListTabPage.SuspendLayout()
         Me.PanelDataGridViewBorrowList.SuspendLayout()
@@ -160,14 +160,14 @@ Partial Class recordsUserControl
         Me.borrowListDataGrid.AllowUserToResizeColumns = False
         Me.borrowListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.borrowListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle19.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle19.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.borrowListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.borrowListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.borrowListDataGrid.ColumnHeadersHeight = 29
         Me.borrowListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.borrowListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.B_Cover_Column, Me.B_BorrowDate_Column, Me.B_DueDate_Column, Me.B_ISBN_Column, Me.B_Title_Column, Me.B_Edition_Column, Me.B_ShelfID_Column, Me.B_BowID_Column, Me.CheckIn_Column})
@@ -180,12 +180,12 @@ Partial Class recordsUserControl
         Me.borrowListDataGrid.RowHeadersVisible = False
         Me.borrowListDataGrid.RowHeadersWidth = 51
         Me.borrowListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle20.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White
-        Me.borrowListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        Me.borrowListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.borrowListDataGrid.RowTemplate.Height = 30
         Me.borrowListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.borrowListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -208,7 +208,7 @@ Partial Class recordsUserControl
         Me.B_BorrowDate_Column.MinimumWidth = 6
         Me.B_BorrowDate_Column.Name = "B_BorrowDate_Column"
         Me.B_BorrowDate_Column.ReadOnly = True
-        Me.B_BorrowDate_Column.Width = 151
+        Me.B_BorrowDate_Column.Width = 149
         '
         'B_DueDate_Column
         '
@@ -217,7 +217,7 @@ Partial Class recordsUserControl
         Me.B_DueDate_Column.MinimumWidth = 6
         Me.B_DueDate_Column.Name = "B_DueDate_Column"
         Me.B_DueDate_Column.ReadOnly = True
-        Me.B_DueDate_Column.Width = 121
+        Me.B_DueDate_Column.Width = 119
         '
         'B_ISBN_Column
         '
@@ -226,7 +226,7 @@ Partial Class recordsUserControl
         Me.B_ISBN_Column.MinimumWidth = 6
         Me.B_ISBN_Column.Name = "B_ISBN_Column"
         Me.B_ISBN_Column.ReadOnly = True
-        Me.B_ISBN_Column.Width = 85
+        Me.B_ISBN_Column.Width = 86
         '
         'B_Title_Column
         '
@@ -235,7 +235,7 @@ Partial Class recordsUserControl
         Me.B_Title_Column.MinimumWidth = 6
         Me.B_Title_Column.Name = "B_Title_Column"
         Me.B_Title_Column.ReadOnly = True
-        Me.B_Title_Column.Width = 80
+        Me.B_Title_Column.Width = 82
         '
         'B_Edition_Column
         '
@@ -244,7 +244,7 @@ Partial Class recordsUserControl
         Me.B_Edition_Column.MinimumWidth = 6
         Me.B_Edition_Column.Name = "B_Edition_Column"
         Me.B_Edition_Column.ReadOnly = True
-        Me.B_Edition_Column.Width = 104
+        Me.B_Edition_Column.Width = 105
         '
         'B_ShelfID_Column
         '
@@ -253,7 +253,7 @@ Partial Class recordsUserControl
         Me.B_ShelfID_Column.MinimumWidth = 6
         Me.B_ShelfID_Column.Name = "B_ShelfID_Column"
         Me.B_ShelfID_Column.ReadOnly = True
-        Me.B_ShelfID_Column.Width = 97
+        Me.B_ShelfID_Column.Width = 101
         '
         'B_BowID_Column
         '
@@ -262,7 +262,7 @@ Partial Class recordsUserControl
         Me.B_BowID_Column.MinimumWidth = 6
         Me.B_BowID_Column.Name = "B_BowID_Column"
         Me.B_BowID_Column.ReadOnly = True
-        Me.B_BowID_Column.Width = 151
+        Me.B_BowID_Column.Width = 147
         '
         'CheckIn_Column
         '
@@ -296,6 +296,25 @@ Partial Class recordsUserControl
         Me.Panel1.Size = New System.Drawing.Size(1736, 95)
         Me.Panel1.TabIndex = 0
         '
+        'TextBoxBookDetailBorrowList
+        '
+        Me.TextBoxBookDetailBorrowList.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxBookDetailBorrowList.Location = New System.Drawing.Point(940, 50)
+        Me.TextBoxBookDetailBorrowList.MaxLength = 200
+        Me.TextBoxBookDetailBorrowList.Name = "TextBoxBookDetailBorrowList"
+        Me.TextBoxBookDetailBorrowList.Size = New System.Drawing.Size(236, 33)
+        Me.TextBoxBookDetailBorrowList.TabIndex = 31
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(3, 62)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(127, 21)
+        Me.Label9.TabIndex = 30
+        Me.Label9.Text = "Borrow Date:"
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -327,6 +346,16 @@ Partial Class recordsUserControl
         Me.ComboBoxBookDetailFilterBorrowList.Size = New System.Drawing.Size(236, 36)
         Me.ComboBoxBookDetailFilterBorrowList.TabIndex = 26
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(330, 29)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(37, 21)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "To:"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -336,6 +365,15 @@ Partial Class recordsUserControl
         Me.Label1.Size = New System.Drawing.Size(62, 21)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "From:"
+        '
+        'DateTimePickerBorrowListTo
+        '
+        Me.DateTimePickerBorrowListTo.Font = New System.Drawing.Font("Malgun Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerBorrowListTo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerBorrowListTo.Location = New System.Drawing.Point(334, 53)
+        Me.DateTimePickerBorrowListTo.Name = "DateTimePickerBorrowListTo"
+        Me.DateTimePickerBorrowListTo.Size = New System.Drawing.Size(176, 34)
+        Me.DateTimePickerBorrowListTo.TabIndex = 23
         '
         'DateTimePickerBorrowListFrom
         '
@@ -410,14 +448,14 @@ Partial Class recordsUserControl
         Me.returnListDataGrid.AllowUserToResizeRows = False
         Me.returnListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.returnListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.returnListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.returnListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.returnListDataGrid.ColumnHeadersHeight = 29
         Me.returnListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.returnListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Ret_Cover_Column, Me.Ret_PaymentStatus_Column, Me.Ret_BorrowDate_Column, Me.Ret_DueDate_Column, Me.Ret_DateReturned_Column, Me.Ret_Penalty_Column, Me.Ret_ISBN_Column, Me.Ret_Title_Column, Me.Ret_Edition_Column, Me.Ret_ShelfID_Column, Me.Ret_BowID_Column, Me.Ret_UpdatePStatus_Column})
@@ -429,12 +467,12 @@ Partial Class recordsUserControl
         Me.returnListDataGrid.RowHeadersVisible = False
         Me.returnListDataGrid.RowHeadersWidth = 51
         Me.returnListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle22.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White
-        Me.returnListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        Me.returnListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.returnListDataGrid.RowTemplate.Height = 30
         Me.returnListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.returnListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -633,14 +671,14 @@ Partial Class recordsUserControl
         Me.reservationListDataGrid.AllowUserToResizeRows = False
         Me.reservationListDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.reservationListDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.LightBlue
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.reservationListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightBlue
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.reservationListDataGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.reservationListDataGrid.ColumnHeadersHeight = 29
         Me.reservationListDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.reservationListDataGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Res_Cover_Column, Me.Res_Status_Column, Me.Res_ReserveDate_Column, Me.Res_ISBN_Column, Me.Res_Title_Column, Me.Res_Edition_Column, Me.Res_ShelfID_Column, Me.Res_BowID_Column, Me.Res_ReservationID_Column, Me.Complete_Column})
@@ -653,12 +691,12 @@ Partial Class recordsUserControl
         Me.reservationListDataGrid.RowHeadersVisible = False
         Me.reservationListDataGrid.RowHeadersWidth = 51
         Me.reservationListDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle24.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White
-        Me.reservationListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.reservationListDataGrid.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.reservationListDataGrid.RowTemplate.Height = 30
         Me.reservationListDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.reservationListDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -779,77 +817,15 @@ Partial Class recordsUserControl
         Me.Panel3.Size = New System.Drawing.Size(1736, 95)
         Me.Panel3.TabIndex = 1
         '
-        'Panel6
+        'Label10
         '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(5)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1736, 6)
-        Me.Panel6.TabIndex = 22
-        '
-        'searchReservationBtn
-        '
-        Me.searchReservationBtn.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.searchReservationBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(237, Byte), Integer))
-        Me.searchReservationBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchReservationBtn.Location = New System.Drawing.Point(1573, 19)
-        Me.searchReservationBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.searchReservationBtn.Name = "searchReservationBtn"
-        Me.searchReservationBtn.Size = New System.Drawing.Size(150, 68)
-        Me.searchReservationBtn.TabIndex = 18
-        Me.searchReservationBtn.Text = "Search"
-        Me.searchReservationBtn.UseVisualStyleBackColor = False
-        '
-        'searchReservationTxtBx
-        '
-        Me.searchReservationTxtBx.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchReservationTxtBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(117, Byte), Integer))
-        Me.searchReservationTxtBx.Location = New System.Drawing.Point(1253, 50)
-        Me.searchReservationTxtBx.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.searchReservationTxtBx.Name = "searchReservationTxtBx"
-        Me.searchReservationTxtBx.Size = New System.Drawing.Size(238, 33)
-        Me.searchReservationTxtBx.TabIndex = 17
-        Me.searchReservationTxtBx.Text = "Search ID number..."
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(330, 29)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 21)
-        Me.Label2.TabIndex = 25
-        Me.Label2.Text = "To:"
-        '
-        'DateTimePickerBorrowListTo
-        '
-        Me.DateTimePickerBorrowListTo.Font = New System.Drawing.Font("Malgun Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerBorrowListTo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerBorrowListTo.Location = New System.Drawing.Point(334, 53)
-        Me.DateTimePickerBorrowListTo.Name = "DateTimePickerBorrowListTo"
-        Me.DateTimePickerBorrowListTo.Size = New System.Drawing.Size(176, 34)
-        Me.DateTimePickerBorrowListTo.TabIndex = 23
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(3, 62)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(127, 21)
-        Me.Label9.TabIndex = 30
-        Me.Label9.Text = "Borrow Date:"
-        '
-        'TextBoxBookDetailBorrowList
-        '
-        Me.TextBoxBookDetailBorrowList.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxBookDetailBorrowList.Location = New System.Drawing.Point(940, 50)
-        Me.TextBoxBookDetailBorrowList.MaxLength = 200
-        Me.TextBoxBookDetailBorrowList.Name = "TextBoxBookDetailBorrowList"
-        Me.TextBoxBookDetailBorrowList.Size = New System.Drawing.Size(236, 33)
-        Me.TextBoxBookDetailBorrowList.TabIndex = 31
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(1249, 26)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(127, 21)
+        Me.Label10.TabIndex = 40
+        Me.Label10.Text = "Borrower ID:"
         '
         'TextBoxBookDetailReserveList
         '
@@ -928,15 +904,38 @@ Partial Class recordsUserControl
         Me.DateTimePickerReserveListFrom.Size = New System.Drawing.Size(176, 34)
         Me.DateTimePickerReserveListFrom.TabIndex = 32
         '
-        'Label10
+        'Panel6
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Century Schoolbook", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(1249, 26)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(127, 21)
-        Me.Label10.TabIndex = 40
-        Me.Label10.Text = "Borrower ID:"
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(1736, 6)
+        Me.Panel6.TabIndex = 22
+        '
+        'searchReservationBtn
+        '
+        Me.searchReservationBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.searchReservationBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchReservationBtn.Location = New System.Drawing.Point(1573, 19)
+        Me.searchReservationBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.searchReservationBtn.Name = "searchReservationBtn"
+        Me.searchReservationBtn.Size = New System.Drawing.Size(150, 68)
+        Me.searchReservationBtn.TabIndex = 18
+        Me.searchReservationBtn.Text = "Search"
+        Me.searchReservationBtn.UseVisualStyleBackColor = False
+        '
+        'searchReservationTxtBx
+        '
+        Me.searchReservationTxtBx.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchReservationTxtBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.searchReservationTxtBx.Location = New System.Drawing.Point(1253, 50)
+        Me.searchReservationTxtBx.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.searchReservationTxtBx.Name = "searchReservationTxtBx"
+        Me.searchReservationTxtBx.Size = New System.Drawing.Size(238, 33)
+        Me.searchReservationTxtBx.TabIndex = 17
+        Me.searchReservationTxtBx.Text = "Search ID number..."
         '
         'recordsUserControl
         '
