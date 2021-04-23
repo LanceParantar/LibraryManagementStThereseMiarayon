@@ -126,7 +126,8 @@
     End Sub
 
     Private Sub recordsUserControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBoxBookDetailFilter.SelectedIndex = 0
+        ComboBoxBookDetailFilterBorrowList.SelectedIndex = 0
+        ComboBoxBookDetailFilterReserveList.SelectedIndex = 0
     End Sub
 
     Private Sub returnListDataGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles returnListDataGrid.CellContentClick
